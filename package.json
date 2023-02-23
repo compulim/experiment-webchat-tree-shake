@@ -1,0 +1,19 @@
+{
+  "name": "experiment-webchat-tree-shake",
+  "version": "0.0.0-0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild --bundle --minify --outfile=./public/asset/js/main.js ./src/index.js",
+    "start": "npm run build -- --servedir=./public"
+  },
+  "author": "William Wong (https://github.com/compulim)",
+  "license": "MIT",
+  "dependencies": {
+    "botframework-webchat": "4.15.8-main.20230222.b8435f4",
+    "esbuild": "0.17.10"
+  },
+  "devDependencies": {
+    "punycode": "^2.3.0"
+  }
+}

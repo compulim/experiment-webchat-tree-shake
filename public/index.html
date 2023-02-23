@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width" name="viewport" />
+    <script>
+      window.Promise.cancel = 'custom function';
+    </script>
+  </head>
+  <body></body>
+  <script src="asset/js/main.js"></script>
+  <script>
+    console.log('Promise.cancel', window.Promise.cancel);
+  </script>
+</html>
